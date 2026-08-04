@@ -8,7 +8,7 @@
     </h1>
 
     <p class="mt-4 text-lg text-slate-600">
-      This is my portfolio about page.
+      This is my portfolio projects page.
     </p>
   </main>
 </template>
