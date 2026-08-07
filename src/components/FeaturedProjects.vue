@@ -2,6 +2,7 @@
 
 import ProjectCard from '@/components/ProjectCard.vue'
 import uavImage from '@/assets/images/uav.jpg'
+import artBotImage from '@/assets/images/artbot.jpg'
 
 
 const projects = [
@@ -17,23 +18,28 @@ const projects = [
       "C++",
       "MATLab",
       "Gazebo",
+      "Linux"
     ],
     link:
-      "/projects/gps-uav"
+      "/projects/undeadreckoning"
   },
 
 
   {
-    title: "Placeholder",
+    title: "Art Bot",
     description:
-      "Placeholder",
+      "Electronics Desing Lab project based on mobile robot platform desingned to draw on the floor.",
     image:
-      "/images/placeholder.jpg",
+      artBotImage,
     technologies: [
-      "Placeholder",
+      "SIMetrix",
+      "Circuit Design",
+      "C++",
+      "Arduino",
+      "Lab Equipment"
     ],
     link:
-      "/projects/placeholder"
+      "/projects/artbot"
   },
 
     {
@@ -61,7 +67,13 @@ const projects = [
     </h2>
 
 
-    <div class="mt-8 flex gap-6 overflow-x-auto py-4">
+    <div class="mt-8
+    flex
+    flex-col
+    gap-6
+    md:flex-row
+    md:overflow-x-auto
+    py-4">
 
       <ProjectCard
         v-for="project in projects"

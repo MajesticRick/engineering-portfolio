@@ -18,7 +18,7 @@ defineProps<{
 <template>
   <div
     class="
-      w-80
+      w-full
       overflow-hidden
       rounded-xl
       border

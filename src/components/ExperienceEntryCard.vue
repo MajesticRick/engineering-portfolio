@@ -5,7 +5,7 @@ interface ExperienceEntry {
   position: string
   location: string
   date: string
-  description: string
+  description: string[]
   skills: string[]
 }
 
@@ -25,7 +25,6 @@ defineProps<{
       bg-slate-900
       shadow-lg
       transition-transform
-      hover:-translate-y-2
     "
   >
 
@@ -63,9 +62,16 @@ defineProps<{
 
 
       <!-- Description -->
-      <p class="mt-6 text-slate-300">
-        {{ experience.description }}
-      </p>
+      <ul class="mt-6 list-disc space-y-2 pl-5 text-slate-300">
+
+      <li
+        v-for="point in experience.description"
+        :key="point"
+      >
+        {{ point }}
+      </li>
+
+    </ul>
 
 
       <!-- Technologies -->

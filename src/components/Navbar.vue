@@ -64,7 +64,7 @@
     <!-- Desktop links -->
     <div class="hidden gap-6 lg:flex">
 
-      <RouterLink to="/projects" class="hover:text-pink-200">
+      <RouterLink to="/projects" class="hover:text-pink-200" >
         Projects
       </RouterLink>
 
@@ -95,19 +95,19 @@
 
       <div class="flex flex-col gap-4 px-6 py-6">
 
-        <RouterLink to="/projects">
+        <RouterLink to="/projects" @click="menuOpen = false">
           Projects
         </RouterLink>
 
-        <RouterLink to="/experience">
+        <RouterLink to="/experience" @click="menuOpen = false">
           Experience
         </RouterLink>
 
-        <RouterLink to="/about">
+        <RouterLink to="/about" @click="menuOpen = false">
           About
         </RouterLink>
 
-        <RouterLink to="/contact">
+        <RouterLink to="/contact" @click="menuOpen = false">
           Contact
         </RouterLink>
 
